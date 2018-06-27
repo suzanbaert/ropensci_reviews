@@ -28,7 +28,7 @@ The package includes all the following forms of documentation:
 
 #### Functionality
 
-- [ ] **Installation:** Installation succeeds as documented.
+- [X] **Installation:** Installation succeeds as documented.
 - [ ] **Functionality:** Any functional claims of the software been confirmed.
 - [ ] **Performance:** Any performance claims of the software been confirmed.
 - [ ] **Automated tests:** Unit tests cover essential functions of the package
@@ -45,4 +45,8 @@ Estimated hours spent reviewing:
 
 ### Review Comments
 
-- Read function could be more intuitive and in line with what users are already used to. Proposal to call it `read_epub`. Could it be changed that the first system.file() call is no longer needed, but built-in into the read() function?
+- Read example with system.file() was a bi confusing to me at first. Might be good to include an example in the documentation that is just based on a path file. 
+- Also wondered whether it would make sense to call the function epub(), read_epub() to be in line with other R packages? 
+
+
+- Three different epubs have been tried, and all seemed to work. 
