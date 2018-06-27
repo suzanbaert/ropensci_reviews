@@ -9,9 +9,14 @@ file <- system.file("dracula.epub", package = "epubr")
 dracula_meta <- epub_meta(file)
 dracula <- epub(file)
 
+
 #extracting text
 dracula_text <- dracula$data[[1]] #gives new df with the actual text
 dracula_text$text[1]
+
+#getting all text
+full_text_vector <- paste(dracula_text$text, collapse = '')
+
 
 
 
@@ -19,13 +24,20 @@ dracula_text$text[1]
 #OTHER EXAMPLES
 
 HTGAJ <- epub("epubr/testfiles/HTGAJ.epub")
+HTGAJ_text <- HTGAJ$data[[1]]
+HTGAJ_text$text[4]
+
+
+
+powershell <- epub("epubr/testfiles/creating-html-reports-in-powershell.epub")
+powershell_text <- powershell$data[[1]]
+powershell_text$text[2]
 
 
 
 
 #VECTOR OF EXAMPLES
 
-
-
-
-
+vector <- c("epubr/testfiles/dracula.epub", "epubr/testfiles/HTGAJ.epub", "epubr/testfiles/creating-html-reports-in-powershell.epub")
+vectordata <- epub(vector)
+vectordata$data
