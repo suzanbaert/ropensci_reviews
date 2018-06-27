@@ -1,10 +1,31 @@
 library(epubr)
 
 
-file <- system.file("testfiles/HTGAJ.epub", package = "epubr")
-HTGAJ <- epub(file)
-  
-#error
-#Error in if (grepl("<|>", x)) { : argument is of length zero
-# In addition: Warning message:
-# In utils::unzip(file, exdir = exdir) : error 1 in extracting from zip file
+#SHARED EXAMPLE
+file <- system.file("dracula.epub", package = "epubr")
+
+
+#functions test
+dracula_meta <- epub_meta(file)
+dracula <- epub(file)
+
+#extracting text
+dracula_text <- dracula$data[[1]] #gives new df with the actual text
+dracula_text$text[1]
+
+
+
+
+#OTHER EXAMPLES
+
+HTGAJ <- epub("epubr/testfiles/HTGAJ.epub")
+
+
+
+
+#VECTOR OF EXAMPLES
+
+
+
+
+
