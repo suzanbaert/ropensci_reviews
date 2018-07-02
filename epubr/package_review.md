@@ -69,9 +69,9 @@ Similarly with `first_nchar`, perhaps something like `epub_glimpse()` or anythin
 <br>
 
 Last but not least, though everything is in the documentation and R veterans probably will have no issues, I would make the documentation a bit more beginner's friendly.  
-One element in particular caught my eye: the instructrions in the readme to import an epub. It's probably silly, but when I first installed and tried to import an epub (i was in play-modus and so not very concentrated), but I also did a system.call() followed by epub(). I somehow thought I had to make a system file from my epub and then sort of unzip it. Needless to say that I never used the system.call() function before...
+One element in particular caught my eye: the instructrions in the readme to import an epub. It's probably silly, but when I first installed and tried to import an epub (i was in play-modus and so not very concentrated), but I also did a system.call() followed by epub(). I somehow thought I had to make a system file from my epub and then sort of unzip it. (Needless to say that I never used the system.call() function before so wasn't entirely sure what it did...)
 
-It took only a mysterious error and a bit more focus to realize my silly mistake, but I did wonder whether the README could just be a bit clearer. Perhaps something along these lines?
+It took only a mysterious error and a bit more focus to realize my silly mistake, but I did wonder whether the README could just be a bit clearer. Perhaps something along these lines? Tiny change, but maybe a few frowns less from people first using the package?
 
 ```
 #importing an epub file
