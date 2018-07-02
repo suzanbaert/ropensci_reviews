@@ -2,7 +2,7 @@
 
 *Please check off boxes as applicable, and elaborate in comments below.  Your review is not limited to these topics, as described in the reviewer guide*
 
-- [ ] As the reviewer I confirm that there are no conflicts of interest for me to review this work (If you are unsure whether you are in conflict, please speak to your editor _before_ starting your review).
+- [X] As the reviewer I confirm that there are no conflicts of interest for me to review this work (If you are unsure whether you are in conflict, please speak to your editor _before_ starting your review).
 
 #### Documentation
 
@@ -39,7 +39,7 @@ The package includes all the following forms of documentation:
 
 - [ ] **The author has responded to my review and made changes to my satisfaction. I recommend approving this package.**
 
-Estimated hours spent reviewing:
+Estimated hours spent reviewing: 4
 
 ---
 
@@ -55,7 +55,7 @@ A few suggestions though:
 First a few error message suggestions:
 - When adding a non valid file (file doesn't exist or was wrongly spelled) the error message is quite mysterious: `Error in if (grepl("<|>", x)) { : argument is of length zero In addition: Warning message: In utils::unzip(file, exdir = exdir) : error 1 in extracting from zip file.` It might be worth adding a friendlier error message that just reads "file could not be found" or "file is not a valid epub file" or something similar?
 
-- Similarly, it seems that title is a mandatory field in the fields argument. When 'title' is not present, you get an error: `Error: Column `title` must be a 1d atomic vector or a list. In addition: Warning message: Unknown or uninitialised column: 'title'.` I would suggest to either make 'title' a standard field that automatically gets added (like data) or to make title unnecessary.
+- Similarly, it seems that title is a mandatory field in the fields argument. When 'title' is not present, you get an error: `Error: Column 'title' must be a 1d atomic vector or a list. In addition: Warning message: Unknown or uninitialised column: 'title'.` I would suggest to either make 'title' a standard field that automatically gets added (like data) or to make title unnecessary.
 
 
 <br>
